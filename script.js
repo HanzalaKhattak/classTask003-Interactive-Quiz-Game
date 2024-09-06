@@ -27,4 +27,13 @@ function showQuestion(){
     document.getElementById('choice3').textContent = questions[currentQuestionIndex].choice[2];
     document.getElementById('choice4').textContent = questions[currentQuestionIndex].choice[3];
 }
+
+// Function to check the answer
+function checkAnswer(selectedChoiceIndex){
+    if(selectedChoiceIndex === questions[currentQuestionIndex].answer){
+        alert("Your Answer is Correct!")
+    }else{
+        alert("Wrong Answer")
+    }
+}
 showQuestion();

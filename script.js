@@ -22,7 +22,8 @@ var currentQuestionIndex = 0;
 var Score = 0;
 
 function showQuestion(){
-    document.getElementById('question').textContent = questions[currentQuestionIndex].question;
+    var questionEl = document.getElementById('question')
+    questionEl.textContent = questions[currentQuestionIndex].question;
     document.getElementById('choice1').textContent = questions[currentQuestionIndex].choice[0];
     document.getElementById('choice2').textContent = questions[currentQuestionIndex].choice[1];
     document.getElementById('choice3').textContent = questions[currentQuestionIndex].choice[2];
@@ -38,7 +39,7 @@ function checkAnswer(selectedChoiceIndex){
     }else{
         alert("Wrong Answer")
     }
-    currentQuestionIndex++;
+    // currentQuestionIndex++;
 }
 
 // function for next question

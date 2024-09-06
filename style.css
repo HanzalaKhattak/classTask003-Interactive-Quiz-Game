@@ -16,9 +16,10 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    background-color: rgb(175,243,239);
+    background-color: rgb(175, 243, 239);
     flex-direction: column;
     width: 500px;
+    /* margin-left: 400px; */
     padding: 20px;
     border-radius: 10px;
 }
@@ -34,7 +35,7 @@ body{
 
 .btn{
     padding: 10px 20px;
-    width: 70px;
+    width : 70%;
     border-radius: 10px;
     border: 1px solid gray;
 }

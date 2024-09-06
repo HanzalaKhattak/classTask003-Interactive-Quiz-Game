@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="question-container">
         <div>
             <h1>Multiple Choice Quiz</h1>
         </div>
-        <p id="score" class="results">Score : 0</p>
-        <div class="question-box">
-            <p id="question"></p>
+        <p id="score" class="results">Score:0</p>
+        <div class="question-box">        
+            <p id="question" class="results"></p>
             <button class="btn" id="choice1" onclick="checkAnswer(0)"></button>
-            <button class="btn" id="choice2" onclick="checkAnswer(1)"></button>
-            <button class="btn" id="choice3" onclick="checkAnswer(2)"></button>
+            <button  class="btn" id="choice2" onclick="checkAnswer(1)" ></button>
+            <button class="btn" id="choice3"  onclick="checkAnswer(2)"></button>
             <button class="btn" id="choice4" onclick="checkAnswer(3)"></button>
-            <button id="next" onclick="nextQuestion()">Next</button>
+            <button  id="next" class= "nextbtn" onclick="nextQuestion()">Next</button>
         </div>
+        <p id="result" class="results"></p>
     </div>
     <script src="./script.js"></script>
 </body>

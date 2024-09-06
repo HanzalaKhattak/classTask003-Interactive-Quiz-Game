@@ -6,12 +6,12 @@ var questions = [
     },
     {
         question: "Who was the undisputed UFC Champion with a 29 - 0 Wins Record?",
-        choices: ["Volkanowski", "Jones", "Lesner","Khabib"],
+        choice: ["Volkanowski", "Jones", "Lesner","Khabib"],
         answer: 3
     },
     {
         question: "What is our Planet's Name?",
-        choices: ["Mars", "Earth", "Jupiter", "Moon"],
+        choice: ["Mars", "Earth", "Jupiter", "Moon"],
         answer: 1
     }
 ];
@@ -47,6 +47,10 @@ function nextQuestion(){
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
+        // currentQuestionIndex++;
+    }else{
+        document.getElementById('result').textContent = "Your Score is :" + Score;
+        
     }
 }
 showQuestion();

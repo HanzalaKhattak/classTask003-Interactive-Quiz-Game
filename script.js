@@ -36,4 +36,13 @@ function checkAnswer(selectedChoiceIndex){
         alert("Wrong Answer")
     }
 }
+
+// function for next question
+function nextQuestion(){
+
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    }
+}
 showQuestion();

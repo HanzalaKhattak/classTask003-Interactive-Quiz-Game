@@ -11,7 +11,7 @@ var questions = [
     },
     {
         question: "What is our Planet's Name?",
-        choices:c["Mars", "Earth", "Jupiter", "Moon"],
+        choices: ["Mars", "Earth", "Jupiter", "Moon"],
         answer: 1
     }
 ];
@@ -19,6 +19,7 @@ var questions = [
 
 // Function which will show us the questions
 var currentQuestionIndex = 0;
+var Score = 0;
 
 function showQuestion(){
     document.getElementById('question').textContent = questions[currentQuestionIndex].question;
@@ -32,9 +33,12 @@ function showQuestion(){
 function checkAnswer(selectedChoiceIndex){
     if(selectedChoiceIndex === questions[currentQuestionIndex].answer){
         alert("Your Answer is Correct!")
+        Score++;
+        document.getElementById('score').textContent = "Score:" + Score;
     }else{
         alert("Wrong Answer")
     }
+    currentQuestionIndex++;
 }
 
 // function for next question

@@ -54,4 +54,10 @@ function nextQuestion(){
         
     }
 }
+
+function hoverEffect(element){
+    element.style.backgroundColor = "#bbb";
+}
+
+
 showQuestion();

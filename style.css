@@ -33,7 +33,7 @@ body{
     width: 80%;
 }
 
-.btn{
+.btn, .nextbtn{
     padding: 10px 20px;
     width : 70%;
     border-radius: 10px;
@@ -44,4 +44,8 @@ body{
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.results{
+    margin-top: 10px;
 }

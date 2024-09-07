@@ -58,6 +58,8 @@ function nextQuestion(){
 function hoverEffect(element){
     element.style.backgroundColor = "#bbb";
 }
-
+function removeHoverEffect(element){
+    element.style.backgroundColor = "";
+}
 
 showQuestion();
